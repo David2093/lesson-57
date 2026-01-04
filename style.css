@@ -1,0 +1,86 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+  width: 260px;
+  background: #fff;
+  padding: 25px;
+  margin-left: 700px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.container:hover {
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15),
+    0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    background-color: #037c82;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.hero:hover {
+    cursor: pointer;
+    background-color: #80bbbd;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 15px;
+
+  background-color: skyblue;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.btn {
+  width: 120px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;   
+}
